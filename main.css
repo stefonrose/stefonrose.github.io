@@ -176,7 +176,7 @@ nav ul li a.active {
     /* Padding for demo purposes */
     padding: 30px;
     margin: auto;
-    margin-bottom: 30vh;
+    #margin-bottom: 10vh;
 }
 
 .right {
@@ -237,6 +237,7 @@ hr {
 	grid-gap: 1vh 0.5vw;
 	width: 60vw;
 	margin: auto;
+	margin-left: 19.25vw;
 	padding: 10px;
 }
 

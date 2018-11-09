@@ -262,7 +262,7 @@ hr {
 }
 
 .project-tag {
-	margin-top: 60px;
+	margin-top: 90px;
 	padding-left: 0px;
 	#width: 20vw;
 	#margin: auto;
@@ -284,17 +284,18 @@ hr {
 
 .project-tag ul {
 	list-style-type: none;
-	margin: 0;
-    padding: 0;
+	margin: 0px;
+    padding: 0px;
 }
 
 .project-tag ul li {
-	float: left;
+	display: inline-block;
+	padding: 0px;
+	#margin: 0px;
 }
 
 .project-tag ul li p {
 	#display: block;
-    text-decoration: none;
 }
 
 .contact {

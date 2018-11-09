@@ -136,15 +136,15 @@ nav ul {
 }
 
 nav ul li {
-	float: left;
+	#float: left;
+	display: inline-block;
 }
 
 nav ul li a {
 	display: block;
 	color: #EFECCA;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
-    #background-color: #A7A37E;
     
 }
 
@@ -156,6 +156,10 @@ nav ul li a:hover:not(.active) {
 nav ul li a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.nav-links {
+	margin-top: 15px;
 }
 
 .paper {

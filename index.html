@@ -1,234 +1,301 @@
 <!DOCTYPE html>
-<html id="top"	>
-<head>
-	<title>Stephon Fonrose</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans|Raleway|Source+Sans+Pro|Dosis|Josefin+Sans|KoHo|Mukta|Oxygen|PT+Sans|Roboto|Abel|Maven+Pro" rel="stylesheet">
-	
-</head>
+<html id = "top">
+    <head>
+        <title>Stephon Fonrose</title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|KoHo|" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
 
-<body>
-	<main>
-		<div class = "navigation">
-			<nav>
-				<ul style="float: left">
-					<li><a href="index.html"><img src="images/SF3.png" alt="Logo" height="50" width="50"></a></li>
-				</ul>
-				<ul class="nav-links" style="float: right">
-					<!--<li><a href="#top">Hello, World!</a></li>-->	
-					<li><a href="#about_me">About Me</a></li>
-					<li><a href="#outer_resume">Resume</a></li>
-					<li><a href="#outer_projects">Projects</a></li>
-					<li><a href="#contact">Contacts</a></li>
-				</ul>
-			</nav>
-		</div>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-default navbar-light bg-ligh nav-color fixed-top">
+            <a class="navbar-brand" href="#information">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsableNavbar" aria-controls="collapsableNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsableNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#information">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-		<div class="console">
-			<header>
-				<p>&#60;Hello, World!&#47;&#62;</p>
-			</header>
-			<div class="consolebody">
-				<p>> print(myInfo.getName)</p>
-				<p class = "indent"> Stephon Fonrose</p>
-				<p>> print(myInfo.getLocation)</p>
-				<p class = "indent"> Dover, Delaware</p>
-				<p>> print(myInfo.getEducation)</p>
-				<p class = "indent"> Delaware State University</p>
-				<p>> print(myInfo.getMajor)</p>
-				<p class = "indent"> Bachelor of Science in Computer Science</p>
-			</div>
-		</div>
 
-		<div class = "about_me" id="about_me"> 
-			<div class = "left_contents spacing">
+        <section class="information" id="information">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="console">
+                            <header>
+                                <p>Biography Terminal</p>
+                            </header>
+                            <div class="console-body">
+                                <p><span class="console-prompt">~$</span> biography.myName()</p>
+                                <p class = "indent"> Stephon Fonrose</p>
+                                <p><span class="console-prompt">~$</span> biography.myLocation()</p>
+                                <p class = "indent"> Dover, Delaware</p>
+                                <p><span class="console-prompt">~$</span> biography.myEducation()</p>
+                                <p class = "indent"> Delaware State University</p>
+                                <p><span class="console-prompt">~$</span> biography.myMajor()</p>
+                                <p class = "indent"> Computer Science</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
 
-				<p>
-					Hi and welcome to my website. My name is Stephon and I 
-					am Computer Science Student currently in my second year at
-					Delaware State University. This website is largely a project
-					to help me learn HTML, CSS & JavaScript which is the first step in
-					my goal to become a full-stack web developer. 
-				</p>
-				<p>
-					My hobbies include playing video-games, reading and cooking. 
-					I also occasionally like to spend some time dabbling in new programming
-					languages in order to decide whether to learn more in depth about them. 
+        <section class="about-me" id="about-me">
+            <div class="container">
+                <div class = "row"> 
+                    <div class = "col-6 col-md-6 col-sm-6 left-contents">
+                        <p>
+                            Hi and welcome to my website. My name is Stephon and I 
+                            am Computer Science Student currently in my second year at
+                            Delaware State University. This website is largely a project
+                            to help me learn HTML, CSS & JavaScript which is the first step in
+                            my goal to become a full-stack web developer. 
+                        <br> <br>
+                            My hobbies include playing video-games, reading and cooking. 
+                            I also occasionally like to spend some time dabbling in new programming
+                            languages in order to decide whether to learn more in depth about them. 
+                        </p>
+                    </div>
 
-				</p>
+                    <div class = "col-6 col-md-6 col-sm-6 right-contents">
+                        <p><img src="/img/me.jpg" alt="Headshot" width="450px" height="450px" align="right" class="profile"></p>
+                    </div>
+                </div>
+             </div>
+        </section>
 
-			</div>
+        <section class="resume" id="resume">
+            <div class="container paper">
+                <div class="row">
+                <article class="col-12">
+                    <p>EDUCATION</p>
+                    <hr>
+                   
+                    <b>Delaware State University</b>
+                    <span class="right">
+                        <i>Ongoing, Sophmore</i>
+                    </span>
+                    <br>
+                    <b>Computer Science, Bachelor of Science</b>
+                    <span class="right">
+                        <i>Dover, Delaware</i>
+                    </span>
+                    <br>
+                    Overall GPA: 3.5 | Major GPA: 4.0
 
-			<div class = "right_contents">
-				
-				<p><img src="images/me.png" alt="Headshot" width="450px" height="450px" align="right" class="profile"></p>
+                    </article>
 
-			</div>
-		</div>
+                <article class="col-12">
+                    <br>
+                    Relevant Coursework:
+                    <div class="row no-gutters center">
+                        <div class="col">Elements of Computer Programming</div>
+                        <div class="col">Computational Thinking</div>
+                        <div class="col">Data Structures & Algorithms</div>
+                        <div class="w-100"></div>
+                        <div class="col">Operating Systems*</div>
+                        <div class="col">Computer Networking*</div>
+                        <div class="col">Discrete Mathematics</div>
+                        <div class="w-100"></div>
+                        <div class="col">Calculus 1 & 2*</div>
+                        <div class="col">Systems Architecture</div>
+                        <div class="col">Discrete Structures*</div>
+                    </div>
+                    
+                    </article>
 
-		<div class="outer_resume" id="outer_resume">
-			<div class="resume paper spacing" id="resume">
-				<p>EDUCATION</p>
-				<hr>
-				<p>
-					<b>Delaware State University</b>
-					<span class="right">
-						<i>Ongoing, Sophmore</i>
-					</span>
-					<br>
-					<b>Computer Science, Bachelor of Science</b>
-					<span class="right">
-						<i>Dover, Delaware</i>
-					</span>
-					<br>
-					Overall GPA: 3.5 | Major GPA: 4.0
+                
+                <artilcle class="col-12">
+                    <br>
+                    <p>EXPERIENCE</p>
+                    <hr>
+                    
+                    <b>Delaware State University</b>
+                    <span class="right">
+                        <i>Aug. 2018 - Present</i>
+                    </span>
+                    <br>
+                    <b>Computer Programming Tutor</b>
+                    <span class="right">
+                        <i>Dover, Delaware</i>
+                    </span>
+                    <br>
+                    <ul>
+                        <li>Provided academic support to Freshmen and Sophomores in the Elements of Computer Programming and Computational Thinking classes.</li>
+                        <li>Offered tutoring in the Python and Java programming languages.</li>
+                    </ul>	
+                    
+                    <b>CodePath | Delaware State University</b>
+                    <span class="right">
+                        <i>Nov. 2018 - Present	</i>
+                    </span>
+                    <br>
+                    <b>Technical Program Manager | Teaching Assistant</b>
+                    <span class="right">
+                        <i>Dover, Delaware</i>
+                    </span>
+                    <br>
+                    <ul>
+                        <li>Provided students with technical support for labs and assignments.</li>
+                        <li>OCommunicate course updates & announcements to students.</li>
+                        <li>Ensure students are adhering to course policies and procedures</li>
+                    </ul>
+                </artilcle>
 
-				</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 style="text-align: center; ">Projects</h2>
+                <div class="row">
+                    <div class="col project">
+                        <div class="col-12 col-pad proj1">
+                            <header>
+                                <img src="img/project.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 20px;" class="left">
+                                <a href="https://github.com/stefonrose/ZombieSimulation" class="right" style="margin-right: 20px; margin-top: 20px;"><img src="img/github.png" width="30px" height="30px"></a>
+                            </header>
+                            <br>
+                            <h3>Zombie Island Simulation</h3>
+                            <p>A python script that simulates the spread of a zombie infection on an island when given certain information. Based on an SIR model which evolved into a more probabilistic model.</p>
+                            
+                            <div class="row no-gutters project-tags container-fluid ">
+                                    <div class="col">Python</div>
+                                    <div class="col">Pygame</div>
+                                    <div class="col">Java</div>
+    
+                            </div>
+                          </div>  
+                    </div>
+                    
+                    <div class="col project">
+                        <div class="col-12 col-pad proj2">
+                            <header>
+                                <img src="img/project.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 20px;" class="left">
+                                <a href="https://github.com/stefonrose/ZombieSimulation" class="right" style="margin-right: 20px; margin-top: 20px;"><img src="img/github.png" width="30px" height="30px"></a>
+                            </header>
+                            <br>
+                            <h3>My Website - V1</h3>
+                            <p>A website I designed for to teach myself the basics of HTML and CSS without any extra frameworks. For my next version I will be looking to make the site mobile friendly.</p>
+                            
+                            <div class="row no-gutters container-fluid project-tags">
+                                    <div class="col">HTML</div>
+                                    <div class="col">CSS</div>
+                                    <div class="col">GitHub Pages</div>
+    
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col project">
+                        <div class="col-12 col-pad proj3">
+                            <header>
+                                <img src="img/project.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 20px;" class="left">
+                                <a href="https://github.com/stefonrose/ZombieSimulation" class="right" style="margin-right: 20px; margin-top: 20px;"><img src="img/github.png" width="30px" height="30px"></a>
+                            </header>
+                            <br>
+                            <h3 style="text-align: center;">Work in Progress</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
 
-				<p>
-					<br>
-					Relevant Coursework:
-					<table>
-						<tr>
-							<td>Elements of Computer Programming</td>
-					    	<td>Computational Thinking</td>
-					    	<td>Data Structures & Algorithms</td>
-						</tr>
-						<tr>
-						    <td>Operating Systems*</td>
-						    <td>Computer Networking*</td>
-						    <td>Discrete Mathematics*</td>
-						</tr>
-						<tr>
-						    <td>Calculus 1 & 2*</td>
-						    <td>Systems Architecture*</td>
-						    <td>Discrete Structures*</td>
-						</tr>
-					</table>
-				</p>
-
-				<p>EXPERIENCE</p>
-				<hr>
-				<p>
-					<b>Delaware State University</b>
-					<span class="right">
-						<i>Aug. 2018 - Present</i>
-					</span>
-					<br>
-					<b>Computer Programming Tutor</b>
-					<span class="right">
-						<i>Dover, Delaware</i>
-					</span>
-					<br>
-					<ul>
-						<li>Provided academic support to Freshmen and Sophomores in the Elements of Computer Programming and Computational Thinking classes.</li>
-						<li>Offered tutoring in the Python and Java programming languages.</li>
-					</ul>	
-					<br>
-					<b>CodePath | Delaware State University</b>
-					<span class="right">
-						<i>Nov. 2018 - Present	</i>
-					</span>
-					<br>
-					<b>Technical Program Manager | Teaching Assistant</b>
-					<span class="right">
-						<i>Dover, Delaware</i>
-					</span>
-					<br>
-					<ul>
-						<li>Provided students with technical support for labs and assignments.</li>
-						<li>OCommunicate course updates & announcements to students.</li>
-						<li>Ensure students are adhering to course policies and procedures</li>
-					</ul>
-
-				</p>		
-					
-			</div>
-		</div>
-
-		<div class="outer_projects" id="outer_projects">
-			<h2 style="text-align: center; ">Projects</h2>
-			<div class="projects-container" id="projects">
-				<div class="project-item">
-					<header>
-						<img src="images/project.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 20px;" class="left">
-						<a href="https://github.com/stefonrose/ZombieSimulation" class="right" style="margin-right: 20px; margin-top: 20px;"><img src="images/github.png" width="30px" height="30px"></a>
-					</header>
-					<h3>Zombie Island Simulation</h3>
-					<p>A python script that simulates the spread of a zombie infection on an island when given certain information. Based on an SIR model which evolved into a more probabilistic model.</p>
-					
-					<div class="project-tag">
-						<ul>
-							<li><p>Python</p></li>
-							<li><p>PyGame</p></li>
-							<li><p>Java</p></li>
-						</ul>
-					</div>
-					
-				</div>
-			    <div class="project-item">
-			    	<header>
-						<img src="images/project.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 20px;" class="left">
-						<a href="https://github.com/stefonrose/stefonrose.github.io" class="right" style="margin-right: 20px; margin-top: 20px;"><img src="images/github.png" width="30px" height="30px"></a>
-					</header>
-					<h3>My Website - V1</h3>
-					<p>A website I designed for to teach myself the basics of HTML and CSS without any extra frameworks. For my next version I will be looking to make the site mobile friendly.</p>
-
-					<div class="project-tag">
-						<ul>
-							<li><p>HTML</p></li>
-							<li><p>CSS</p></li>
-							<li><p>GitHub Pages</p></li>
-						</ul>
-					</div>
-			    </div>
-			    <div class="project-item">
-			    	<header>
-						<img src="images/project.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 20px;" class="left">
-						<a href="" class="right" style="margin-right: 20px; margin-top: 20px;"><img src="images/github.png" width="30px" height="30px"></a>
-					</header>
-			    </div>  
-			    <!--<div class="project-item">
-			    	<header>4</header>
-			    </div>
-			    <div class="project-item">
-			    	<header>5</header>
-			    </div>
-			    <div class="project-item">
-			    	<header>6</header>
-			    </div>-->
-			</div>
-		</div>
-
-		<div class="outer_contact" id="outer_contact">
-			<div class="contact" id="contact">
-				<h2>Contact</h2>
-				<div class="contact-cards">
-					<ul>
-						<li>
-							<a href="mailto:sfonrose17@student.desu.edu">
-								<img src="images/email.svg" width="100px" height="100px">
-								<p>sfonrose17@students.desu.edu</p>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/stephon-fonrose/">
-								<img src="images/linkedin.svg" width="100px" height="100px">
-								<p>linkedin.com/in/stephon-fonrose/</p>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/stefonrose">
-								<img src="images/github.svg" width="100px" height="100px">
-								<p>github.com/stefonrose</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-	</main>
-
-</body>
+        <script
+              src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <script>
+            window.sr = ScrollReveal(); 
+            ScrollReveal().reveal('.navbar', {
+                duration: 2000,
+                origin: 'bottom'
+            });
+            sr.reveal('.information', {
+                duration: 2000,
+                origin: 'top',
+                distance: '300px'
+                
+            });
+            sr.reveal('.left-contents', {
+                duration: 2000,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('.right-contents', {
+                duration: 2000,
+                origin: 'right',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('.paper', {
+                duration: 2000,
+                opacity: 0,
+                viewFactor: 0.2
+            });
+            sr.reveal('.proj1', {
+                duration: 2000,
+                distance: '300px',
+                origin: 'left',
+                viewFactor: 0.2
+            });
+            sr.reveal('.proj2', {
+                duration: 2000,
+                distance: '300px',
+                origin: 'top',
+                viewFactor: 0.2
+            });
+            sr.reveal('.proj3', {
+                duration: 2000,
+                distance: '300px',
+                origin: 'right',
+                viewFactor: 0.2
+            })
+         </script>
+        
+        <script>
+             $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+        </script>
+        
+    </body>
 </html>

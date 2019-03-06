@@ -1,8 +1,8 @@
 :root{
-    --main-bg-color: #837A75;
+    --main-bg-color: #252627;
     --light-color: #F2FBE0;
-    --highlight-color: #DAFEB7;
-    --dark-color: #605B56;
+    --highlight-color: #F2EFE9;
+    --dark-color: #634B66;
 }
 
 
@@ -12,6 +12,7 @@ html, body {
 }
 
 body {
+    
     font-family: KoHo;
     background-color: var(--main-bg-color);
     color: var(--light-color);
@@ -23,7 +24,7 @@ body {
 }
 
 .console-prompt {
-    color: var(--highlight-color);
+    color: #DBFE87;
 }
 
 nav ul li a:hover:not(.active) {
@@ -32,7 +33,7 @@ nav ul li a:hover:not(.active) {
 }
 
 .nav-color {
-    background-color: var(--light-color);
+    background-color: var(--highlight-color);
 }
 
 .console header {
@@ -51,9 +52,11 @@ nav ul li a:hover:not(.active) {
     border-bottom-right-radius: 15px;
     box-sizing: border-box;
     font-family: 'Source Code Pro';
-    background-color: var(--dark-color);
+    background-color: var(--background-color);
     padding: 20px 20px 20px 20px;
     height: 40vh;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .console .console-body p {
@@ -65,6 +68,7 @@ p.indent {
 }
 
 .information {
+    background: #18020C;
     display: flex;
     height: 100%;
     align-items: center;
@@ -86,6 +90,15 @@ p.indent {
 }
 
 .projects{
+    background: #393D3F;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts{
+    background: #393D3F;
     display: flex;
     height: 100%;
     align-items: center;
@@ -102,12 +115,13 @@ img.profile {
     border-radius: 5%;
     border-width: 2px;
     border-style: solid;
+    border-color: var(--highlight-color);
 }
 
 .left-contents {
     display: flex;
     color: var(--dark-color);
-    background-color: var(--light-color);
+    background-color: var(--highlight-color);
     border-color: var(--dark-color);
     border-radius: 5%;
     border-style: solid;
@@ -132,7 +146,7 @@ img.profile {
     
 	width: 50vw;
 	color: var(--dark-color);
-	background: var(--light-color);
+	background: var(--highlight-color);
 	box-shadow:
 	/* The top layer shadow */
     0 1px 1px rgba(0,0,0,0.15),
@@ -153,8 +167,6 @@ img.profile {
 .project {
     
     height: 100%;
-    
-    
     position: relative;
 }
 
@@ -183,6 +195,30 @@ img.profile {
 
 .col-pad{
     border-radius: 10px;
-    background-color: #ACC18A;
+    background-color: #4ECDC4;
     padding: 10px 10px 100px 10px;
+}
+
+.col-pad-con{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--highlight-color);
+}
+
+.cen {
+    height: 100%;
+}
+.contact-cards img{
+    margin: auto;
+}
+
+.contact-cards a {
+    background-color: var(--highlight-color);
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    
 }

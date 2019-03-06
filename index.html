@@ -10,15 +10,14 @@
 
     <body>
         <nav class="navbar navbar-expand-sm navbar-default navbar-light bg-ligh nav-color fixed-top">
-            <a class="navbar-brand" href="#information">Navbar</a>
+            <a class="navbar-brand" href="#information">
+                <img src="img/sf1.png" height="50" width="50">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsableNavbar" aria-controls="collapsableNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsableNavbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#information">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-me">About Me</a>
                     </li>
@@ -29,7 +28,7 @@
                          <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contacts">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -157,8 +156,8 @@
                     <br>
                     <ul>
                         <li>Provided students with technical support for labs and assignments.</li>
-                        <li>OCommunicate course updates & announcements to students.</li>
-                        <li>Ensure students are adhering to course policies and procedures</li>
+                        <li>Communicated course updates & announcements to students.</li>
+                        <li>Ensured students were adhering to course policies and procedures</li>
                     </ul>
                 </artilcle>
 
@@ -168,7 +167,7 @@
         
         <section class="projects" id="projects">
             <div class="container">
-                <h2 style="text-align: center; ">Projects</h2>
+                <h2 class="project-header" style="text-align: center; ">Projects</h2>
                 <div class="row">
                     <div class="col project">
                         <div class="col-12 col-pad proj1">
@@ -223,6 +222,42 @@
                 </div>
             </div>
         </section>
+        
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 style="text-align: center; ">Contact Me</h2>
+                <div class="row">
+                    <div class="col cen">
+                        <div class="col-12 col-pad-con contact-cards">
+                            <a href="mailto:sfonrose17@student.desu.edu">
+								<img src="img/email.svg" width="50%">
+								<p>sfonrose17@students.desu.edu</p>
+							</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col cen">
+                        <div class="col-12 col-pad-con contact-cards">
+                            <a href="https://www.linkedin.com/in/stephon-fonrose/">
+								<img src="img/linkedin.svg"  width="50%">
+								<p>linkedin.com/in/stephon-fonrose/</p>
+							</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col cen">
+                        <div class="col-12 col-pad-con contact-cards">
+                            <a href="https://github.com/stefonrose">
+								<img src="img/github.svg"  width="50%">
+								<p>github.com/stefonrose</p>
+							</a>
+                        </div>
+                    </div>
+                
+                
+                </div>
+            </div>
+        </section>
 
         <script
               src="https://code.jquery.com/jquery-3.3.1.js"
@@ -233,13 +268,12 @@
         <script>
             window.sr = ScrollReveal(); 
             ScrollReveal().reveal('.navbar', {
-                duration: 2000,
+                duration: 3500,
                 origin: 'bottom'
             });
             sr.reveal('.information', {
-                duration: 2000,
-                origin: 'top',
-                distance: '300px'
+                duration: 3000,
+                origin: 'top'
                 
             });
             sr.reveal('.left-contents', {
@@ -257,6 +291,10 @@
             sr.reveal('.paper', {
                 duration: 2000,
                 opacity: 0,
+                viewFactor: 0.2
+            });
+            sr.reveal('.project-header', {
+                duration: 6000,
                 viewFactor: 0.2
             });
             sr.reveal('.proj1', {
@@ -277,6 +315,10 @@
                 origin: 'right',
                 viewFactor: 0.2
             })
+            sr.reveal('.contacts', {
+                duration: 2000,
+                viewFactor: 0.2
+            });
          </script>
         
         <script>
